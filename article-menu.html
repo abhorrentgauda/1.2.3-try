@@ -1,0 +1,61 @@
+<ul class="article-menu article__menu container">
+  <li class="article-menu__item"><a href="#">Ремонтируемые устройства</a></li>
+  <li class="article-menu__item"><a href="#">Дополнительные услуги</a></li>
+  <li class="article-menu__item"><a href="#">Цены на услуги</a></li>
+  <li class="article-menu__item"><a href="#">Адреса сервисных центров</a></li>
+  <li class="article-menu__item"><a href="#">Специальные цены</a></li>
+  <li class="article-menu__item"><a href="#">Отзывы</a></li>
+</ul>
+
+<style>
+  .article-menu {
+    margin: 0;
+  }
+
+  .article__menu {
+    display: flex;
+    overflow: auto;
+    list-style: none;
+    padding-top: 0;
+    padding-left: 0;
+    font-size: 16px;
+    line-height: 24px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    letter-spacing: -0.2px;
+    color: #7E7E82;
+  }
+
+  .article__menu::-webkit-scrollbar {
+    display: none;
+  }
+
+  .article-menu__item {
+    white-space: nowrap;
+    margin-right: 20px;
+    margin-left: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border: 2px solid transparent;
+  }
+
+  .article-menu__item:hover {
+    background: #FFFFFF;
+    border: 2px solid #B8FFEC;
+    border-radius: 6px;
+  }
+
+  .article-menu__item:active {
+    background: #FFFFFF;
+    border: 2px solid #B8FFEC;
+    border-radius: 6px;
+  }
+
+  .article-menu__item a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+</style>

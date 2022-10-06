@@ -1,0 +1,89 @@
+<style>
+  .container {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  .header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+  }
+
+  .button {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+  }
+
+  .header__button {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    margin-right: 16px;
+  }
+
+  .header__button:last-child {
+    margin-right: 0px;
+  }
+
+  .header__divider--first {
+    margin-right: 20px;
+  }
+
+  .header__divider--second {
+    margin-right: 20px;
+  }
+
+  .header__button--logo {
+    padding: 0;
+    margin-right: auto;
+  }
+</style>
+
+<header class="header">
+  <div class="header__container container">
+    <button class="button header__button header__button--menu">
+      <a href="#">
+        <img src="icons/burger.svg">
+      </a>
+    </button>
+    <div class="divider header__divider header__divider--first">
+      <img src="icons/divider.svg">
+    </div>
+    <button class="button header__button header__button--logo">   
+      <a href="#">
+        <img src="icons/Group.svg">
+      </a>
+    </button>
+    <button class="button header__button header__button--call">
+      <a href="#">
+        <img src="icons/call.svg">
+      </a>
+    </button>
+    <button class="button header__button header__button--chat">
+      <a href="#">
+        <img src="icons/chat.svg">
+      </a>
+    </button>
+    <button class="button header__button header__button--profile">
+      <a href="#">
+        <img src="icons/profile.svg">
+      </a>
+    </button>
+    <div class="divider header__divider header__divider--second">
+      <img src="icons/divider.svg">
+    </div>
+    <button class="button header__button header__button--repair">
+      <a href="#">
+        <img src="icons/repair.svg">
+      </a>
+    </button>
+    <button class="button header__button header__button--status">
+      <a href="#">
+        <img src="icons/checkstatus.svg">
+      </a>
+    </button>
+  </div>
+</header>
