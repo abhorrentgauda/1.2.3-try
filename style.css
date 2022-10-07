@@ -416,9 +416,3 @@ ul {
   height: auto;
   padding: 0;
 }
-
-@media (min-width: 320px) {
-  .section__image {
-    padding: -16px;
-  }
-}
