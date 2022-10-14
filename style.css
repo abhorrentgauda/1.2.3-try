@@ -117,53 +117,59 @@ ul {
   border-radius: 50%;
 
   background-color: #FF3E79;
+  transition: 0.3s;
+  cursor: pointer;
 }
 
-.header__button--profile {
+.header__button:hover {
+  opacity: 0.85;
+}
+
+.button--profile {
   background-image: url(icons/profile.svg);
 }
 
 @media (min-width:320px) {
-  .header__button--profile {
+  .button--profile {
     display: none;
   }
 }
 
-.header__button--chat {
+.button--chat {
   background-image: url(icons/chat.svg);
 }
 
 @media (min-width:320px) {
-  .header__button--chat {
+  .button--chat {
     display: none;
   }
 }
 
-.header__button--call {
+.button--call {
   background-image: url(icons/call.svg);
 }
 
 @media (min-width:320px) {
-  .header__button--call {
+  .button--call {
     display: none;
   }
 }
 
-.header__button--repair {
+.button--repair {
   background-image: url(icons/repair.svg)
 }
 
-.header__button--status {
+.button--status {
   background-image: url(icons/checkstatus.svg);
 }
 
-.header__button--menu {
+.button--menu {
   background-image: url(icons/burger.svg);
 }
 
 
 
-.header__button:last-child {
+.button:last-child {
   margin-right: 0px;
 }
 
@@ -243,6 +249,13 @@ ul {
   align-items: center;
   margin-left: auto;
   margin-right: 32px;
+
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.article__label:hover {
+  opacity: 0.85;
 }
 
 .article__label:last-child {
@@ -281,6 +294,12 @@ ul {
   border-radius: 50%;
 
   background-color: #FF3E79;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.article__button:hover {
+  opacity: 0.85;
 }
 
 .article__button--status {

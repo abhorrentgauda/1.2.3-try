@@ -31,23 +31,46 @@
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
   margin: 0;
   padding: 0;
-  width: 320px;
-  min-height: 100vh;
-  box-shadow: 16px 0 52px 0 rgba(14, 24, 80, 0.2),
-              -2px 0 4px 0 rgba(69, 79, 126, 0.02);
 
   font-family: 'TT Lakes', sans-serif;
   color: #1B1C21;
 }
 
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  position: sticky;
+  left: 0;
+
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  min-height: 100vh;
+  box-shadow: 16px 0 52px 0 rgba(14, 24, 80, 0.2),
+              -2px 0 4px 0 rgba(69, 79, 126, 0.02);
+}
+
+@media (min-width: 765px) {
+  .sidebar {
+    width: 320px;
+  }
+}
+
 .container {
-  padding: 24px;
+  padding-right: 16px;
+  padding-left: 16px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+@media (min-width: 360px) {
+  .container {
+    padding: 24px;
+  }
 }
 
 
@@ -84,6 +107,12 @@ body {
   border-radius: 50%;
 
   background-color: #FF3E79;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.header__button:hover {
+  opacity: 0.85;
 }
 
 
@@ -125,7 +154,7 @@ body {
   display: flex;
   flex-direction: column;
 
-  padding: 0;
+  padding-top: 8px;
   margin: 0;
 
   list-style: none;
@@ -136,8 +165,24 @@ body {
   color: #1B1C21;
 }
 
+@media (min-width: 768px) {
+  .nav-menu {
+    padding-top: 32px;
+  }
+}
+
 .nav-menu__item {
-  margin-bottom: 32px;  
+  margin-bottom: 24px;  
+}
+
+.nav-menu__item:last-child {
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .nav-menu__item {
+    margin-bottom: 32px;  
+  }
 }
 
 .nav-menu__item--current {
@@ -148,7 +193,13 @@ body {
   content: url(icons/highlighter.svg);
   position: absolute;
 
-  transform: translateX(-24px) translateY(-8px);
+  transform: translateX(-16px) translateY(-8px);
+}
+
+@media (min-width: 360px) {
+  .nav-menu__item--current::before {
+    transform: translateX(-24px) translateY(-8px);
+  }
 }
 
 .nav-menu__link {
@@ -179,6 +230,12 @@ body {
   border-radius: 50%;
 
   background-color: #FF3E79;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.footer__button:hover {
+  opacity: 0.85;
 }
 
 .footer__phone-number {
@@ -196,8 +253,14 @@ body {
 }
 
 .footer__language {
-  padding-top: 24px;
+  padding-top: 8px;
   padding-bottom: 8px;
+}
+
+@media (min-width: 768px) {
+  .footer-language {
+    padding-top: 24px;
+  }
 }
 
 .footer-language__link {
