@@ -48,7 +48,7 @@ body {
 
   margin: 0;
   padding: 0;
-  max-width: 100%;
+  width: 100vw;
   min-height: 100vh;
   box-shadow: 16px 0 52px 0 rgba(14, 24, 80, 0.2),
               -2px 0 4px 0 rgba(69, 79, 126, 0.02);
@@ -213,6 +213,11 @@ body {
   color: #7E7E82;
 }
 
+.footer {
+  display: flex;
+  flex-direction: column;
+}
+
 .footer__nav {
   margin-top: auto;
   margin-bottom: 0;
@@ -238,12 +243,23 @@ body {
   opacity: 0.85;
 }
 
+.footer__email {
+
+
+  margin-top: 16px;
+  margin-bottom: 12px;
+  text-decoration: none;
+  color: inherit;
+}
+
 .footer__phone-number {
   margin: 0;
 
   font-size: 24px;
   line-height: 32px;
   font-weight: bold;
+  color: inherit;
+  text-decoration: none;
 
   letter-spacing: -0.6px;
 }
@@ -253,8 +269,12 @@ body {
 }
 
 .footer__language {
+  padding: 0;
   padding-top: 8px;
   padding-bottom: 8px;
+  margin: 0;
+
+  list-style: none;
 }
 
 @media (min-width: 768px) {
