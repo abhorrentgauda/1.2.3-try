@@ -97,6 +97,7 @@ body {
 
 .swiper {
   background-color: #F8F8F8;
+  padding-right: 0;
 }
 
 @media (min-width: 768px) {
@@ -130,12 +131,14 @@ body {
 @media (min-width: 768px) {
   .section-cards__card {
     width: 224px;
+    margin-right: 24px;
   }
 }
 
 @media (min-width: 1120px) {
   .section-cards__card {
     width: 240px;
+    margin-right: 32px;
   }
 }
 
